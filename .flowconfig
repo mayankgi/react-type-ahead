@@ -1,0 +1,20 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+
+[libs]
+
+[options]
+module.system.node.resolve_dirname=node_modules/
+module.system.node.resolve_dirname=app/
+
+
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+
+module.name_mapper='.*\(.css\)' -> '<PROJECT_ROOT>/flow/GeneralStub.js.flow'
+module.name_mapper='.*\(.scss\)' -> '<PROJECT_ROOT>/flow/GeneralStub.js.flow'
+
+
+# module.name_mapper='\(react-bootstrap\)' -> '<PROJECT_ROOT>/flow/GeneralStub.js.flow'

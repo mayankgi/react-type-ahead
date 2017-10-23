@@ -1,0 +1,41 @@
+.type-ahead{
+  .show{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
+  input{
+    height: 25px;
+    border: 1px solid #a8a8a8;
+    width: 350px;
+    border-radius: 5px;
+  }
+  .type-ahead-res{
+    border: 1px solid #888;
+    margin:0px;
+    padding: 0px;
+    max-height: 300px;
+    width: 600px;
+    overflow: auto;
+    list-style: none;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    z-index: 10000;
+    background-color: #f8f8f8;
+    li{
+      border-bottom: 1px solid #a8a8a8;
+      padding: 5px 10px;
+      &:last-child{
+        border-bottom: 0px;
+      }
+      &:hover{
+        background-color: #00bfff;
+      }
+      &:active{
+        background-color: #0080ff;
+      }
+    }
+  }
+}

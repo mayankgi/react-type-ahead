@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+dest/
+public/*
+!public/index.html
+flow-typed/
+npm-debug.log
+yarn-error.log
